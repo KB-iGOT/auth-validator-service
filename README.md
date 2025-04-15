@@ -2,20 +2,16 @@
 sudo apt-get update
 pip install -r requirements.txt
 
-# Report Generation Service
-
-This microservice generates CSV reports for an organization from a PostgreSQL database and encrypts them.
-
 ## Running with Docker
 
 1. Build the image:
    ```sh
-   docker build -t auth-generator-service .
+   docker build -t auth-validator-service .
    ```
 
 2. Run the container:
    ```sh
-   docker run -p 5001:5001 auth-generator-service
+   docker run -p 5001:5001 auth-validator-service
    ```
 
 3. Access the liveness endpoint:
